@@ -34,20 +34,21 @@
 # COMMAND ----------
 
 # where you want the PDFs to be saved in your environment
-dbutils.widgets.text("PDF_Path", "/dbfs/tmp/langchain_hls/pdfs")
+dbutils.widgets.text("PDF_Path", "/dbfs/ml/blogs/tmp/langchain_hls/pdfs")
 
 # which embeddings model from Hugging Face 🤗  you would like to use; for biomedical applications we have been using this model recently
 # also worth trying this model for embeddings for comparison: pritamdeka/BioBERT-mnli-snli-scinli-scitail-mednli-stsb
 dbutils.widgets.text("Embeddings_Model", "pritamdeka/S-PubMedBert-MS-MARCO")
 
 # where you want the vectorstore to be persisted across sessions, so that you don't have to regenerate
-dbutils.widgets.text("Vectorstore_Persist_Path", "/dbfs/tmp/langchain_hls/db")
+dbutils.widgets.text("Vectorstore_Persist_Path", "/dbfs/ml/blogs/tmp/langchain_hls/db")
 
 # publicly accessible bucket with PDFs for this demo
-dbutils.widgets.text("Source_Documents", "s3a://db-gtm-industry-solutions/data/hls/llm_qa/")
+# dbutils.widgets.text("Source_Documents", "s3a://db-gtm-industry-solutions/data/hls/llm_qa/"
+dbutils.widgets.text("Source_Documents", "dbfs:/mnt/xomics/hls/llm_qa/"))
 
 # where you want the Hugging Face models to be temporarily saved
-hf_cache_path = "/dbfs/tmp/cache/hf"
+hf_cache_path = "/dbfs//ml/blogs/tmp/cache/hf"
 
 # COMMAND ----------
 

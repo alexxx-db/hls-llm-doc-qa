@@ -8,7 +8,7 @@
 Large Language Models produce some amazing results, chatting and answering questions with seeming intelligence. But how can you get LLMs to answer questions about _your_ specific datasets? Imagine answering questions based on your company's knowledge base, docs or Slack chats. The good news is that this is easy with open-source tooling and LLMs. This example shows how to apply [LangChain](https://python.langchain.com/en/latest/index.html), Hugging Face `transformers`, and open source LLMs such as [MPT-7b-Instruct](https://huggingface.co/mosaicml/mpt-7b-instruct) from MosaicML or [Falcon-7b-Instruct](https://huggingface.co/tiiuae/falcon-7b-instruct) from the Technology Innovation Institute. This example can make use of any text-generation LLM or even OpenAI with minor changes. In this case, the data set is a set of freely available published papers in PDF format about cystic fibrosis from PubMed, but could be any corpus of text.
 
 ___
-<james.mccall@databricks.com>
+<james.mccall@databricks.com> <alexb@databricks.com>
 
 ___
 

@@ -41,14 +41,14 @@ job_json = {
         },
         "tasks": [
             {
-                "job_cluster_key": "hls_qa_cluster",
+                "job_cluster_key": "hls_llm_qa_cluster",
                 "notebook_task": {
                     "notebook_path": f"01-Introduction"
                 },
                 "task_key": "Intro"
             },
             {
-                "job_cluster_key": "hls_qa_cluster",
+                "job_cluster_key": "hls_llm_qa_cluster",
                 "notebook_task": {
                     "notebook_path": f"02-Data-prep-with-LangChain"
                 },
@@ -60,7 +60,7 @@ job_json = {
                 ]
             },
             {
-                "job_cluster_key": "hls_qa_cluster",
+                "job_cluster_key": "hls_llm_qa_cluster",
                 "notebook_task": {
                     "notebook_path": f"03-LLM-Chain-and-Question-Answering"
                 },
@@ -74,7 +74,7 @@ job_json = {
         ],
         "job_clusters": [
             {
-              "job_cluster_key": "hls_qa_cluster",
+              "job_cluster_key": "hls_llm_qa_cluster",
               "new_cluster": {
                   "spark_version": "13.1.x-gpu-ml-scala2.12",
                   "num_workers": 1,
